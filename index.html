@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #fname1,
+        #lname1,
+        #addr,
+        #city,
+        #state,
+        #zip {
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid;
+        }
+
+        #newbor {
+            border: solid;
+            width:25%;
+            border-width: 3px
+        }
+
+        .header{
+            background: red;
+            color: white;
+            margin: auto;
+        }
+        .ff {
+               display: inline-block;
+               width: 7em;
+               position: relative;
+               top: -3em;
+               font-family: Brush Script MT, Brush Script Std, cursive;
+            }
+
+        .kk {
+               display: inline-block;
+               width: 6em;
+               margin-right: .5em;
+               padding-top: 1.5em;
+            }
+
+    </style>
+    </style>
+</head>
+
+<body>
+    <br>
+
+    <h3>1.Fix the bugs in below snippet</h3>
+    <pre>
+&lthtml lang="en"&gt
+    &lthead&gt
+        &lttitle&gtDocument
+            &ltbody&gt
+                guvi
+        &lt/title&gt
+    &lt/head&gt
+    &ltdiv&gt
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        &ltdiv&gt
+            &ltdiv&gt
+                Guvi Geek Network
+            &lt/div&gt
+        &lt/body&gt
+    &lt/html&gt
+</pre>
+    <br>
+    <h4>Output</h4>
+    <pre>
+    &lthtml lang="en"&gt
+    &lthead&gt
+        &lttitle&gtDocument guvi&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt 
+    &ltdiv&gt
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        &ltdiv&gt
+            &ltdiv&gt
+                Guvi Geek Network
+            &lt/div&gt
+        &lt/div&gt
+    &lt/div&gt 
+    &lt/body&gt
+&lt/html&gt
+    </pre>
+
+    <br>
+    <h3>2. Try the below one</h3>
+    <pre>
+    &lthtml lang="en"&gt
+    &lthead&gt
+        &lttitle&gtDocument
+            &ltbody&gt
+                guvi
+    &lt/head&gt
+    &ltdiv&gt
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        &ltdiv&gt
+            &ltdiv&gt
+                Guvi Geek Network
+            &lt/div&gt
+        &lt/body&gt
+    &lt/html&gt
+    </pre>
+    </br>
+    <stong>
+        <h4>Output: Attached in Document file</h4>
+    </stong>
+    <form>
+        <h3>3.Design a contact us form with all fields as required.</h3>
+        <h4>Contact Us</h4>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <br>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <br>
+        <br>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+        </select>
+        <br>
+        <br>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." rows="1" cols="50" required></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br>
+    <h3>4.Use certain HTML elements to display the following in a HTML page.</h3>
+    <ul>
+        <li>Programming Language</li>
+        <ul>
+            <li>JavaScript</li>
+            <ol>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Vue.js</li>
+            </ol>
+            <li>Python</li>
+            <ol>
+                <li>Django Framework</li>
+                <li>Flask Framework</li>
+            </ol>
+            <li>Java</li>
+            <ol>
+                <li>Spring</li>
+                <li>Maven</li>
+                <li>Hibernate</li>
+            </ol>
+        </ul>
+        <li>Database</li>
+        <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Cansandra</li>
+        </ul>
+    </ul>
+
+    <br>
+    <div>
+        <h3>5.Create an element that helps you to open the https://google.com in separate new tab.</h3>
+        <a href="https://google.com/" target="_blank">Click</a>
+    </div>
+
+    <br>
+    <form>
+        <h3>6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)</h3>
+        <p>Please select your Employee type:</p>
+        <input type="radio" id="Salaried" name="worktype">
+        <label for="Salaried">Salaried</label><br>
+        <input type="radio" id="business" name="worktype">
+        <label for="business">Own business</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <h3>7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)</h3>
+    <div id="newbor">
+        <form action="#" method="" enctype="multipart">
+            <p class="header">Yes,I want to subscribe to <em>Mag-O-Zine</em></p><br>
+            
+            <label for="fname1" class="kk">First Name<input type="text" placeholder="Enter Your First Name" id="fname1" class="ff" /></label>
+            <label for="lname1" class="kk">Last Name<input type="text" placeholder="Enter Your Last Name" id="lname1" class="ff"/></label><br>
+
+
+            
+            <label for="addr" class="kk">Address<input type="text" placeholder="Enter Your Address" id="addr" class="ff" /></label><br>
+
+                
+            
+            
+            <label for="city" class="kk">City<input type="text" placeholder="Enter Your City" id="city" class="ff"/></label>
+                <label for="state" class="kk">state<input type="text" placeholder="Enter Your State" id="state" class="ff"/></label>
+                    <label for="zip" class="kk">Zip<input type="text" placeholder="Enter Your Zip" id="zip" class="ff"/></label><br>
+
+
+
+                        <b><label for="">Subscribe for: <input type="checkbox" value="19"> 1 year ($19.95)<input
+                                    type="checkbox" value="35">2 years($35.00)</label><br>
+                            <label for="">Send me more information about:<br>
+                                <input type="checkbox" value="computer"> Computer-Zine<br>
+                                <input type="checkbox" value="fishing"> Fishing-Zine<br>
+                                <input type="checkbox" value="cat"> Cat-O-Zine<br>
+                            </label></b>
+        </form>
+    </div>
+            <br>
+            <h3>8. Use the table tag to design given image Click here.</h3>
+            <table border="1">
+                <tr>
+                    <th rowspan="2">
+                        State of Health
+                    </th>
+                    <th colspan="2">
+                        Fasting Value
+                    </th>
+                    <th>
+                        After Eating
+                    </th>
+                </tr>
+                <tr>
+                    <th>Minimum</th>
+                    <th>Maximum</th>
+                    <th>2 hours after eating</th>
+                </tr>
+                <tr>
+                    <td>Healthy</td>
+                    <td>70</td>
+                    <td>100</td>
+                    <td>Less than 140</td>
+                </tr>
+                <tr>
+                    <td>Pre-Diabetes</td>
+                    <td>101</td>
+                    <td>126</td>
+                    <td>140 to 200</td>
+                </tr>
+                <tr>
+                    <td>Diabetes</td>
+                    <td>More than 126</td>
+                    <td>N/A</td>
+                    <td>More than 200</td>
+                </tr>
+            </table>
+
+            <br>
+            <form action="">
+                <h3>9. Write HTML input tags snippet to show default values for all Form elements.</h3>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            <h3>10. In your, HTML page add the below line and Highlight it without using any CSS</h3>
+            <ul>
+                <li>
+                    <mark>"HTML & CSS is awesome"</mark>
+                </li>
+            </ul>
+
+            <br>
+            <form action="">
+                <h3>11 .Create an HTML page, which should contain all types of input elements.</h3>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label>Enter Password</label><br><br>
+                <input type="Password" name="password"><br><br>
+
+
+                <p>Kindly Select your favorite color</p>
+                <input type="radio" name="color" value="red"> Red <br>
+                <input type="radio" name="color" value="blue"> blue <br><br>
+
+                <p>Kindly Select your favourite sports</p>
+                <input type="checkbox" name="sport1" value="cricket">Cricket<br>
+                <input type="checkbox" name="sport2" value="tennis">Tennis<br><br>
+
+                <input type="button" value="Clcik me " onclick="alert('you are learning HTML')"> <br><br>
+
+                <label>Select file to upload:</label>
+                <input type="file" name="newfile"> <br><br>
+
+                <input type="image" alt="Submit" src="http://pngimg.com/uploads/parrot/parrot_PNG96591.png"
+                    width="100px"><br><br>
+
+                <input type="color" name="upclick" value="#a52a2a"> Upclick<br><br>
+
+                <label> Start date:</label>
+                <input type="date" name="Startdate"><br><br>
+
+                <label>
+                    Select the meeting schedule: <br><br>
+                    Select date & time: <input type="datetime-local" name="meetingdate"> <br><br>
+                </label>
+
+                <label>Enter multiple Email-addresses</label>
+                <input type="email" name="email" multiple> <br><br>
+
+                <label>Enter your Birth Month-year: </label>
+                <input type="month" name="newMonth"> <br><br>
+
+                <label>Enter your age: </label>
+                <input type="number" name="num" min="50" max="80"> <br><br>
+
+                <label>Enter your website URL: </label>
+                <input type="url" name="website" placeholder="http://example.com"><br><br>
+
+                <label>Select your best week of year:</label>
+                <input type="week" name="bestweek"> <br><br>
+
+                <label>Search here:</label>
+                <input type="search" name="q"> <br><br>
+
+                <label><b>Enter your Telephone Number(in format of xxx-xxx-xxxx):</b></label>
+                <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br><br>
+
+
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Reset"> <br><br>
+
+            </form>
+            <br>
+</body>
+
+</html>
